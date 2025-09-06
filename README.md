@@ -1,2 +1,2 @@
 # FrontEnd
-Functional Programming
+FrontEnd Programming
