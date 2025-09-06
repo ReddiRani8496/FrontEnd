@@ -1,0 +1,29 @@
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+div {
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+table {
+  text-align: center;
+}
+
+h1,
+h2 {
+  color: blue;
+}
+
+.headings {
+  background-color: lightblue;
+}
+
+.main_heading {
+  background-color: darkcyan;
+}

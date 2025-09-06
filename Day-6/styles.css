@@ -1,0 +1,47 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th {
+  color: blue;
+}
+td {
+  color: olivedrab;
+}
+caption {
+  color: red;
+}
+
+/* tr {
+  height: 100px;
+} */
+
+.lastRow {
+  height: 100px;
+}
+
+.middleRow {
+  background-color: gray;
+  td,
+  th {
+    color: white;
+  }
+  /* th {
+    color:white;
+  } */
+}
+
+/* .firstRow {
+  background-color: gray;
+  th,
+  td {
+    color: white;
+  }
+} */
+
+.columnWidth {
+  width: 300px;
+}

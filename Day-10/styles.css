@@ -1,0 +1,23 @@
+h1 {
+  background-color: rebeccapurple;
+  color: white;
+  padding: 5px;
+}
+
+a {
+  /* background-color: black; */
+  color: #afb948;
+  display: block;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+span {
+  background-color: red;
+  color: rgb(22, 117, 155);
+  display: block;
+}
+
+div {
+  text-align: center;
+}

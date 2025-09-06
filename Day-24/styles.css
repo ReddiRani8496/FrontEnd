@@ -1,0 +1,29 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 2fr 4fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
+  height: 100vh;
+}
+
+.header,
+.footer {
+  background-color: yellow;
+  padding-top: 10px;
+  padding-left: 10px;
+  grid-column: 1 / span 3;
+}
+
+.nav,
+.article,
+.ads {
+  background-color: yellow;
+  padding-top: 10px;
+  padding-left: 10px;
+}

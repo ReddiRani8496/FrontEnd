@@ -1,0 +1,107 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.heading {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  font-size: 35px;
+}
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.starting-para {
+  font-size: 19px;
+  margin-left: 15px;
+}
+.left-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-left: 5px;
+  width: 140px;
+  cursor: pointer;
+}
+.article {
+  font-size: 20px;
+}
+.talk {
+  font-size: 20px;
+  color: #3366cc;
+}
+.talk:hover {
+  color: black;
+}
+.right-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  width: 400px;
+  cursor: pointer;
+}
+.read {
+  font-size: 20px;
+}
+.view-source {
+  font-size: 20px;
+  color: #3366cc;
+}
+.view-source:hover {
+  color: black;
+}
+.view-history {
+  font-size: 20px;
+  color: #3366cc;
+}
+.view-history:hover {
+  color: black;
+}
+.tools {
+  font-size: 20px;
+}
+.para {
+  margin-top: 20px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.span {
+  margin-left: 70px;
+}
+.heading-2 {
+  margin-top: 30px;
+  margin-bottom: 7px;
+  margin-left: 15px;
+}
+.para-two {
+  margin-top: 20px;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.table {
+  border: 1px solid black;
+  width: 420px;
+  height: 800px;
+  margin-top: 80px;
+}
+/*.table-heading{
+    margin-top: 100px;
+}*/
+.hero-image {
+  width: 280px;
+  height: 300px;
+  margin-left: 75px;
+  /* margin-bottom: 450px; */
+}
+.concatinate {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image-data {
+  height: 150px;
+}

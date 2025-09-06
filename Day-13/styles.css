@@ -1,0 +1,30 @@
+.inner-container {
+  border: 1px solid black;
+  width: 400px;
+  padding: 20px;
+  img {
+    border-radius: 15px;
+  }
+  /* float: left; */
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+
+p {
+  line-height: 5px;
+}
+
+.middletag {
+  color: red;
+}
+
+.firstTag {
+  opacity: 0.5;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

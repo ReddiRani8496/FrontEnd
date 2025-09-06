@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background-image: url("https://imgs.search.brave.com/ZkD9Ly2FK5mjsnmF6l7MrR-mEfspggx4CNdxiFfcsQU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbHVz/LnVuc3BsYXNoLmNv/bS9wcmVtaXVtX3Bo/b3RvLTE3MDE1MzQw/MDg2OTMtMGVlZTA2/MzJkNDdhP2ZtPWpw/ZyZxPTYwJnc9MzAw/MCZpeGxpYj1yYi00/LjEuMCZpeGlkPU0z/d3hNakEzZkRCOE1I/eHpaV0Z5WTJoOE1Y/eDhkMlZpYzJsMFpT/VXlNR0poWTJ0bmNt/OTFibVI4Wlc1OE1I/eDhNSHg4ZkRBPQ");
+  height: 400px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text {
+  width: 45%;
+  text-align: center;
+}
+.middle {
+  font-size: 70px;
+  font-family: "Bitter", serif;
+}
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+h2 {
+  font-weight: bold;
+}

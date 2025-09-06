@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-start; */
+  background-color: aquamarine;
+  /* justify-content: flex-end; */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+  /* align-content: space-around; */
+  /* align-items: center; */
+  /* justify-content: center; */
+
+  /* align-items: flex-start;
+  justify-content: flex-end; */
+  /* align-items: flex-end;
+  justify-content: flex-end; */
+  /* align-items: center;
+  justify-content: flex-end; */
+  /* align-items: center;
+  justify-content: flex-start; */
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.a-container {
+  height: 300px;
+  width: 300px;
+  background-color: lightcoral;
+}
+
+.b-container {
+  height: 300px;
+  width: 300px;
+  background-color: lightblue;
+}

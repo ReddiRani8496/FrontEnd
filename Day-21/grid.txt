@@ -1,0 +1,7 @@
+grid-column-start : we have to specify in which column line container should start.
+grid-column-end: we have to specify in which column line  container should end.
+
+
+grid-column: first specify starting line / span specify how many columns it has to take 
+
+example: 1/span 2
