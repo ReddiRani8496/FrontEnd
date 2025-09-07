@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.hero-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-left-content {
+  background-color: #fef7e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10% 3% 10% 20%;
+  text-align: center;
+}
+
+.hero-heading {
+  margin-bottom: 20px;
+}
+
+.hero-para {
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+
+.read-more {
+  background-color: #e2781a;
+  color: white;
+  border-radius: 30px;
+  padding: 10px;
+  width: 150px;
+  border: none;
+}
+
+.read-more:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.sweets-section {
+  background-image: url("images/sweetsBackground.jpg");
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.sweets-heading {
+  color: white;
+}
+
+.sweet-items-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.sweet-item {
+  background-color: white;
+  border-radius: 15px;
+  width: 300px;
+  padding: 30px;
+}
+.items-list {
+  list-style: none;
+
+  li {
+    line-height: 30px;
+  }
+}
