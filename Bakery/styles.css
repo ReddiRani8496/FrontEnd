@@ -85,3 +85,30 @@
     line-height: 30px;
   }
 }
+
+.our-bread-section {
+  background-color: #e8b284;
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.our-bread-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr;
+  gap: 10px;
+}
+
+.bread-item {
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+}
+
+.bread-item-image {
+  height: 200px;
+  width: 250px;
+  border-radius: 10px;
+}
