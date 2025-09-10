@@ -111,7 +111,7 @@
 
 .bread-item-image {
   height: 200px;
-  width: 250px;
+  width: 260px;
   border-radius: 10px;
   margin-bottom: 15px;
 }
@@ -139,4 +139,49 @@
   padding: 5px;
   width: 120px;
   border-radius: 15px;
+}
+
+.subscribe-section {
+  background-image: url("images/subscribeBackground.jpg");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  margin-bottom: 200px;
+  opacity: 0.9;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subscribe-content {
+  width: 690px;
+  padding-left: 250px;
+}
+
+.subscribe-heading1 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subscribe-heading2 {
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+
+.subscribe-button {
+  background-color: #e2781a;
+  color: white;
+  border-radius: 30px;
+  padding: 10px;
+  width: 130px;
+  border: none;
+  font-weight: bold;
+  font-size: large;
+  margin-bottom: 20px;
+}
+
+.subscribe-para {
+  font-size: 11px;
 }
