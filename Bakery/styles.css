@@ -212,6 +212,12 @@
     line-height: 30px;
     font-size: 12px;
   }
+
+  li:hover {
+    cursor: pointer;
+    color: #e2781a;
+    text-decoration: underline;
+  }
 }
 
 .send-message {
@@ -222,4 +228,17 @@
   width: 180px;
   border: none;
   font-weight: bold;
+}
+
+.social-media-links {
+  color: #e2781a;
+  fill: #e2781a;
+}
+
+.phone-icon {
+  i {
+    color: #e2781a;
+    fill: #e2781a;
+    padding-right: 20px;
+  }
 }
