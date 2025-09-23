@@ -282,3 +282,48 @@
 .details-data {
   text-decoration: underline;
 }
+
+.contact-us-form {
+  height: 400px;
+  margin-bottom: 100px;
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactusformimage {
+  height: 300px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 300px;
+  width: 350px;
+  gap: 20px;
+  align-items: center;
+}
+
+.form-email,
+.form-name {
+  width: 300px;
+  height: 20px;
+  padding: 5px;
+}
+
+.form-message {
+  width: 300px;
+  height: 80px;
+  padding: 5px;
+}
+
+.submit-button {
+  width: 300px;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid black;
+}
