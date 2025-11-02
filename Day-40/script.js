@@ -75,6 +75,23 @@
 // console.log(a && b); // 10 && 20, if first value is true, then it will print second value
 // in javascript except 0 everything will be true, 0->false
 
-let a = true;
-let b = 0;
-console.log(b && a); // if first value is false, then it will return first value
+// let a = false;
+// let b = 0;
+// console.log(a && b); // if first value is false, then it will return first value
+
+// let a = false;
+// let b = true;
+// console.log(a || b); // expect 0 everything is true
+
+// let a = false;
+
+// console.log(!a); // a = 10 !a  false
+
+// condition ? exp1 : exp2;
+
+// console.log(10 < 20 ? 10 : 20);
+
+// console.log(false ? 10 : 20);
+
+// console.log(~10);
+console.log(10 >> 2); // 10 / 2^shifts // 10 / 4
