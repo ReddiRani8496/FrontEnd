@@ -70,14 +70,74 @@
 
 // function addTwoNumbers(a,b)
 
-let addTwoNumbers = function (a, b) {
-  console.log(a + b);
-};
+// let addTwoNumbers = function (a, b) {
+//   console.log(a + b);
+// };
 
-addTwoNumbers(10, 20);
+// addTwoNumbers(10, 20);
 
-let printHello = function () {
-  console.log("Hello");
-};
+// let printHello = function () {
+//   console.log("Hello");
+// };
 
-printHello();
+// printHello();
+
+let arr = [1, 2, 3, 4];
+
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+
+// arr.forEach((val) => console.log(val));
+
+// arr.forEach(function (val) {
+//   console.log(val);
+// });
+
+function printVal(val) {
+  console.log("inside the function");
+  console.log(val);
+}
+
+// printVal(arr[0]);
+// printVal(arr[1]);
+// printVal(arr[2]);
+// printVal(arr[3]);
+
+// for (let i = 0; i < arr.length; i++) {
+//   printVal(arr[i]);
+// }
+
+// arr.forEach(printVal(val));
+
+// arr.forEach(function (val) {
+//   console.log(val);
+// });
+
+// arrow functions =>
+
+// arr.forEach((val) => {
+//   console.log(val);
+// });
+
+// arr.forEach((val) => console.log(val));
+
+let arr1 = [1, 2, 3];
+
+function printVal(val) {
+  console.log(val);
+}
+
+// for (let i = 0; i < arr1.length; i++) {
+//   printVal(arr[i]);
+// }
+
+arr1.forEach(function (val) {
+  console.log(val);
+});
+
+arr1.forEach((val) => {
+  console.log(val);
+});
+
+arr1.forEach((val) => console.log(val));
