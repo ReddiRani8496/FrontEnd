@@ -1,4 +1,19 @@
-.bulboff {
-  height: 300px;
-  width: 300px;
+div {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#div1 {
+  background-color: aquamarine;
+}
+
+#div2 {
+  background-color: blanchedalmond;
+}
+
+#div3 {
+  background-color: violet;
 }
