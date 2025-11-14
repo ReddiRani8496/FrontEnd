@@ -1,0 +1,18 @@
+#myDiv {
+  height: 200px;
+  width: 200px;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#secondDiv {
+  height: 200px;
+  width: 200px;
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
