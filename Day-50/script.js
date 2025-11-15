@@ -1,25 +1,43 @@
-let divElement = document.getElementById("myDiv");
+// let buttonElement = document.getElementById("button");
 
-divElement.onclick = function () {
-  console.log("Div element is clicked");
-};
+// buttonElement.onclick = () => {
+//   console.log("button is clicked");
+// };
 
-// arrow functions
+// buttonElement.onclick = function () {
+//   console.log("buttonnnn");
+// };
 
-divElement.onclick = () => {
-  console.log("Div is clickedddddd");
-};
+// addEventListener
 
-// it will execute the last method -> Div is Clickedddddddddddd
+// buttonElement.addEventListener("click", (e) => {
+//   console.log("button of add event listener");
+// });
 
-// let a  = 10;
+// let secondDiv = document.getElementById("secondDiv");
 
-// a = 5;
+// let handler = () => {
+//   console.log("div");
+// };
 
-// console.log(a);
+// secondDiv.addEventListener("mouseleave", handler);
 
-let secondDivElement = document.getElementById("secondDiv");
+// secondDiv.removeEventListener("mouseleave", handler);
 
-secondDivElement.onmouseover = () => {
-  console.log("Mouse hovered on the second div");
-};
+let body = document.querySelector("body");
+
+let toggelButton = document.getElementById("theme");
+
+let currentMode = "light";
+
+toggelButton.addEventListener("click", () => {
+  if (currentMode == "light") {
+    currentMode = "dark";
+    body.setAttribute("class", "dark");
+    toggelButton.innerText = "Change Theme to Light Mode";
+  } else if (currentMode == "dark") {
+    currentMode = "light";
+    body.setAttribute("class", "light");
+    toggelButton.innerText = "Change Theme to dark Mode";
+  }
+});
