@@ -1,5 +1,7 @@
 let boxes = document.querySelectorAll(".box");
 
+let winnerMessage = document.querySelector(".winner-message");
+
 let turnO = true;
 
 let winningPatterns = [
@@ -24,5 +26,26 @@ boxes.forEach((box) => {
       turnO = true;
       box.disabled = true;
     }
+    winner();
   });
 });
+
+const showWinner = (winnerName) => {
+  winnerMessage.innerText = `Congratulations 👏 Winner is ${winnerName}`;
+  boxes.forEach((box) => {
+    box.disabled = true;
+  });
+};
+
+const winner = () => {
+  winningPatterns.forEach((pattern) => {
+    let firstVal = boxes[pattern[0]].innerText;
+    let secondVal = boxes[pattern[1]].innerText;
+    let thirdVal = boxes[pattern[2]].innerText;
+    if (firstVal != "" && secondVal != "" && thirdVal != "") {
+      if (firstVal == secondVal && secondVal == thirdVal) {
+        showWinner(firstVal);
+      }
+    }
+  });
+};
