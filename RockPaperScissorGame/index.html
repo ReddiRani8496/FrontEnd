@@ -9,25 +9,39 @@
   <body>
     <h1>Rock Paper Scissor</h1>
 
+    <p class="turn-message">Player 1 Turn</p>
+
     <div class="choices">
-      <div class="choice"><img src="rock.png" alt="rock" /></div>
-      <div class="choice"><img src="paper.png" alt="paper" /></div>
-      <div class="choice"><img src="scissors.png" alt="scissors" /></div>
+      <div class="choice" id="rock"><img src="rock.png" alt="rock" /></div>
+      <div class="choice" id="paper"><img src="paper.png" alt="paper" /></div>
+      <div class="choice" id="scissor">
+        <img src="scissors.png" alt="scissors" />
+      </div>
     </div>
 
     <div class="score-list">
       <div>
         <p id="user-score">0</p>
-        <p>You</p>
+        <p>Player1</p>
       </div>
       <div>
         <p id="computer-score">0</p>
-        <p>Computer</p>
+        <p>Player2</p>
       </div>
       <div>
         <p id="draw-score">0</p>
         <p>Draw</p>
       </div>
     </div>
+
+    <!-- <div class="player-buttons">
+      <button class="player">Player 1</button>
+      <button class="player">Player 2</button>
+    </div> -->
+
+    <div>
+      <button id="message">Pick your Move</button>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
