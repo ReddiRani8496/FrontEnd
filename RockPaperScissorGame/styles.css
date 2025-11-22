@@ -60,18 +60,6 @@ img {
   border-radius: 5px;
 }
 
-/* .player {
-  margin-top: 40px;
-  border: none;
-  background-color: rgb(66, 66, 203);
-  color: white;
-  padding: 10px;
-  font-size: 20px;
-  border-radius: 5px;
-  display: inline;
-  cursor: pointer;
-} */
-
 .turn-message {
   margin-top: 20px;
   font-size: 20px;

@@ -2,24 +2,22 @@ let rockElement = document.getElementById("rock");
 let paperElement = document.getElementById("paper");
 let scissorElement = document.getElementById("scissor");
 
-let userScore = document.getElementById("user-score");
-let computerScore = document.getElementById("computer-score");
+let userScore = document.getElementById("player1-score");
+let computerScore = document.getElementById("player2-score");
 let drawScore = document.getElementById("draw-score");
 
 let messageElement = document.getElementById("message");
 
-let user = 0;
-let computer = 0;
+let player1 = 0;
+let player2 = 0;
 let draw = 0;
 
 let choices = ["rock", "paper", "scissor"];
 
-// Math.random()
-
 function updateScores(userChoice) {
   let computerChoice = choices[Math.floor(Math.random() * 3)];
-  console.log("computer clicked", computerChoice);
-  console.log("user clicked", userChoice);
+  console.log("player2 clicked", computerChoice);
+  console.log("player1 clicked", userChoice);
 
   if (userChoice == computerChoice) {
     draw++;
@@ -31,13 +29,13 @@ function updateScores(userChoice) {
     (userChoice == "paper" && computerChoice == "rock") ||
     (userChoice == "scissor" && computerChoice == "paper")
   ) {
-    user++;
-    userScore.innerText = user;
+    player1++;
+    userScore.innerText = player1;
     messageElement.innerText = `You Won! ${userChoice} beat ${computerChoice}`;
     messageElement.style.backgroundColor = "green";
   } else {
-    computer++;
-    computerScore.innerText = computer;
+    player2++;
+    computerScore.innerText = player2;
     messageElement.innerText = `You Lost! ${computerChoice} beat ${userChoice}`;
     messageElement.style.backgroundColor = "red";
   }
