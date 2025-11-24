@@ -16,3 +16,10 @@ function square(num) {
   let res = num * num;
   return res;
 }
+
+let value1;
+console.log(value1); // undefined
+
+console.log(value2); // Not defined
+
+const value2 = 10;
