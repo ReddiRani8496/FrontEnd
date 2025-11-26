@@ -80,11 +80,38 @@
 
 function printData() {
   return new Promise((resolve, reject) => {
-    console.log("inside promise");
-    reject("error ");
+    setTimeout(() => {
+      console.log("inside promise");
+      resolve("success");
+    }, 3000);
   });
 }
 
-let data = printData();
+// let data = printData();
 
-console.log(data);
+// data.then(() => {
+//   console.log("success1");
+//   let data1 = printData();
+//   data1.then(() => {
+//     console.log("second print data");
+//   });
+// });
+
+printData().then(() => {
+  printData().then(() => {
+    printData().then(() => {});
+  });
+});
+
+// data.catch((err) => {
+//   console.log("Inside catch", err);
+// });
+
+// let data1 = printData();
+// data1.then(() => {
+//   console.log("success2");
+// });
+
+// data1.catch((err) => {
+//   console.log("Inside catch", err);
+// });
