@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currency Converter</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container">
@@ -15,26 +19,32 @@
           <br />
           <input type="text" value="1" />
         </div>
+        <div class="dropdown">
+          <div>
+            <p>From</p>
+            <div class="select-container">
+              <img src="https://flagsapi.com/US/flat/64.png" />
+              <select>
+                <option value="INR">INR</option>
+                <option value="USD" selected>USD</option>
+                <option value="EU">EU</option>
+              </select>
+            </div>
+          </div>
 
-        <div>
-          <p>From</p>
+          <i class="fa-solid fa-arrow-right-arrow-left"></i>
 
-          <img src="https://flagsapi.com/US/flat/64.png" />
-          <select>
-            <option value="INR">INR</option>
-            <option value="USD" selected>USD</option>
-            <option value="EU">EU</option>
-          </select>
-        </div>
-
-        <div>
-          <p>To</p>
-          <img src="https://flagsapi.com/IN/flat/64.png" />
-          <select>
-            <option value="INR" selected>INR</option>
-            <option value="USD">USD</option>
-            <option value="EU">EU</option>
-          </select>
+          <div>
+            <p>To</p>
+            <div class="select-container">
+              <img src="https://flagsapi.com/IN/flat/64.png" />
+              <select>
+                <option value="INR" selected>INR</option>
+                <option value="USD">USD</option>
+                <option value="EU">EU</option>
+              </select>
+            </div>
+          </div>
         </div>
 
         <div>1USD = 89.39INR</div>

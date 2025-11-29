@@ -18,9 +18,51 @@ body {
   padding: 36px;
   border-radius: 10px;
   min-height: 50vh;
-  width: 50vh;
+  width: 60vh;
 }
 
 form {
   margin: 16px 0 8px 0;
+}
+
+form input,
+select,
+button {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 15px;
+}
+
+form input {
+  border: 1px solid lightgray;
+  height: 30px;
+  padding-left: 8px;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.select-container img {
+  max-width: 32px;
+}
+
+.select-container {
+  display: flex;
+  width: 85px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgray;
+}
+
+.dropdown {
+  i {
+    font-size: 20px;
+    margin-top: 15px;
+  }
 }
