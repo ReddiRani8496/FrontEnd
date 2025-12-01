@@ -1,4 +1,11 @@
+const baseurl = "https://api.frankfurter.app/latest?";
+
 let dropdowns = document.querySelectorAll(".dropdown select");
+let button = document.querySelector("button");
+let input = document.querySelector("input");
+let fromCurrency = document.querySelector(".from select");
+let toCurrency = document.querySelector(".to select");
+let message = document.querySelector(".message");
 
 for (let select of dropdowns) {
   for (let currencyCode in countryList) {
@@ -23,3 +30,19 @@ const updateFlag = (currencyCode, select) => {
   let image = select.parentElement.querySelector("img");
   image.src = `https://flagsapi.com/${countryList[currencyCode]}/flat/64.png`;
 };
+
+button.addEventListener("click", async (event) => {
+  event.preventDefault();
+
+  let amount = input.value;
+
+  let url = `${baseurl}base=${fromCurrency.value}&symbols=${toCurrency.value}`;
+
+  let response = await fetch(url);
+  let data = await response.json();
+
+  let totalAmount = data["rates"][toCurrency.value] * amount;
+
+  //1USD = 89.39INR
+  message.innerText = `${amount} ${fromCurrency.value} = ${totalAmount} ${toCurrency.value}`;
+});

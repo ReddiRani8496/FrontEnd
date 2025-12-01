@@ -54,7 +54,7 @@ form input {
 
 .select-container {
   display: flex;
-  width: 90px;
+  width: 95px;
   justify-content: center;
   align-items: center;
   border: 1px solid lightgray;
@@ -77,4 +77,5 @@ button {
   background-color: rgb(94, 94, 192);
   color: white;
   border-radius: 5px;
+  cursor: pointer;
 }
