@@ -53,8 +53,10 @@
 // x();
 // console.log(a);
 
+// clouser -> a function with it's lexical environment bundled together is called clouser.
 function x() {
   var a = 10;
+
   function y() {
     console.log(a);
   }
@@ -65,3 +67,13 @@ function x() {
 const z = x();
 console.log(z);
 z();
+
+console.log(num);
+
+var num = 20;
+
+hello();
+
+function hello() {
+  console.log("hello");
+}
