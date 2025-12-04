@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Management</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Student Details</h1>
+    <button class="addStudent">Add Student</button>
+    <table class="table">
+      <tr>
+        <th>Roll No</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Course</th>
+        <th>Duration</th>
+        <th>Fee</th>
+        <th>Actions</th>
+      </tr>
+    </table>
+
+    <form class="disableForm">
+      <label for="rollNo">Roll Number: </label>
+      <input type="number" name="rollNo" id="rollNo" />
+      <br />
+      <label for="name">Name: </label>
+      <input type="text" name="name" id="name" />
+      <br />
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender">
+        <option value="M">Male</option>
+        <option value="F">Female</option>
+        <option value="O">Other</option>
+      </select>
+      <br />
+      <label for="course">Course: </label>
+      <input type="text" name="course" id="course" />
+      <br />
+      <label for="duration">Duration: </label>
+      <input type="text" name="duration" id="duration" />
+      <br />
+      <label for="fee">Fee: </label>
+      <input type="number" name="fee" id="fee" />
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
