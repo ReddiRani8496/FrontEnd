@@ -2,6 +2,8 @@ const fetchStudentDetailsURL = "http://localhost:8080/student/allStudents";
 const addStudentURL = "http://localhost:8080/student/insert";
 const updateStudentDetailsURL = "http://localhost:8080/student/update";
 const deleteStudentDetailsURL = "http://localhost:8080/student/delete/";
+const findStudentByRollNo = "http://localhost:8080/student/findStudentById/";
+const findStudentByName = "http://localhost:8080/student/findStudentByName/";
 
 const fetchData = async () => {
   const response = await fetch(fetchStudentDetailsURL);
@@ -11,11 +13,15 @@ const fetchData = async () => {
 
 fetchData();
 
+let searchContainer = document.querySelector("#searchContainer");
+
 function showForm() {
   form.classList.remove("disableForm");
   form.classList.add("enableForm");
   tableElement.classList.remove("table");
   tableElement.classList.add("disableTable");
+  searchContainer.classList.remove("search-container");
+  searchContainer.classList.add("disableSearchContainer");
 }
 
 const updateStudentEvent = async (student) => {
@@ -47,9 +53,10 @@ let tableBody = document.querySelector("tbody");
 let updateStudent = false;
 
 const updateTable = (data) => {
-  console.log("line 50", data);
   tableBody.innerHTML = "";
-  for (let student of data) {
+  // checking data is array format or no, and converting into array format
+  const students = Array.isArray(data) ? data : [data];
+  for (let student of students) {
     let tr = document.createElement("tr");
     for (let value in student) {
       let td = document.createElement("td");
@@ -133,8 +140,28 @@ form.addEventListener("submit", async (e) => {
     form.classList.remove("enableForm");
     tableElement.classList.add("table");
     tableElement.classList.remove("disableTable");
+    searchContainer.classList.remove("disableSearchContainer");
+    searchContainer.classList.add("search-container");
     form.reset();
     fetchData();
     updateStudent = false;
+  }
+});
+
+let searchValueInput = document.querySelector(".searchInput");
+let searchButton = document.querySelector(".searchBtn");
+
+searchButton.addEventListener("click", async () => {
+  let input = searchValueInput.value.trim();
+  if (!input) {
+    fetchData();
+  } else if (!isNaN(input)) {
+    let response = await fetch(`${findStudentByRollNo}${input}`);
+    let data = await response.json();
+    updateTable(data);
+  } else if (isNaN(input)) {
+    let response = await fetch(`${findStudentByName}${input}`);
+    let data = await response.json();
+    updateTable(data);
   }
 });
