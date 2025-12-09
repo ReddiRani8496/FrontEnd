@@ -54,3 +54,5 @@
 let heading = document.querySelector("h1");
 
 heading.innerText = heading.innerText + " Good Morning!";
+
+heading.style.backgroundColor = "red";
