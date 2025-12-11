@@ -54,7 +54,6 @@ let updateStudent = false;
 
 const updateTable = (data) => {
   tableBody.innerHTML = "";
-  // checking data is array format or no, and converting into array format
   const students = Array.isArray(data) ? data : [data];
   for (let student of students) {
     let tr = document.createElement("tr");
