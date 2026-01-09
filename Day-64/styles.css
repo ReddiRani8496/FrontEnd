@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  height: 300px;
+  width: 500px;
+  display: flex;
+}
+
+.image {
+  height: 300px;
+  width: 250px;
+}
+
+.text-container {
+  background-color: white;
+  height: 300px;
+  width: 250px;
+  padding: 20px;
+}
+
+.sub-heading {
+  font-size: 10px;
+  color: rgb(216, 215, 215);
+  margin-bottom: 30px;
+}
+
+.para {
+  font-size: 15px;
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  font-size: 25px;
+}
+
+.buy-now {
+  color: white;
+  background-color: aquamarine;
+  border: none;
+  width: 120px;
+  border-radius: 20px;
+  padding: 10px 0;
+}
